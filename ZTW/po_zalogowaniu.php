@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="description" content="System pozwalający na zamawianie przez internet.">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-
+  	
 	<?php
 		session_start();
 
@@ -15,8 +14,16 @@
 			header('Location: start.php');
 			exit();
 		}
+		else
+		{
+			$urzytkownik= $_SESSION['urzytkownik'];
+			$imie 		= $_SESSION['imie' ];
+			$z_kod 		= $_SESSION['z_kod'];
+		}
 	?>
-	
+
+	<title><?php echo "$urzytkownik: $imie"?></title>"
+
 	<script type="text/javascript" src="zamowienie.js"></script>
 	<script>
 		window.onload=zegar;
@@ -96,10 +103,6 @@
 		<form class="my_form c">
 			<div>
 				<?php
-
-					$urzytkownik= $_SESSION['urzytkownik'];
-					$imie 		= $_SESSION['imie' ];
-					$z_kod 		= $_SESSION['z_kod'];
 					echo "Urzytkownik: $urzytkownik<br>";
 					echo "Imie: $imie<br>";
 					echo "Nr zamówienia: $z_kod<br>";
