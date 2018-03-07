@@ -18,7 +18,7 @@
 			}
 			else
 			{
-				$sql = "SELECT * FROM 10_sektory INNER JOIN 11_stoliki ON 10_sektory.ID_Sk=11_stoliki.Sektor WHERE NazwaSt='$k_stol'";
+				$sql = "SELECT * FROM sektory INNER JOIN stoliki ON sektory.ID_Sk=stoliki.Sektor WHERE NazwaSt='$k_stol'";
 				if( $result = @$bacic_connect->query($sql) )
 				{
 					if($result->num_rows>0)
@@ -34,7 +34,7 @@
 								if(date("a")=="pm") {    $hour+=12;    }
 								$time= date("Y-m-d $hour:i:s");
 
-								$sql = "INSERT INTO 04_zamowienia (Stolik, DataOtw) VALUES ('$id_stol', '$time')";
+								$sql = "INSERT INTO zamowienia (Stolik, DataOtw) VALUES ('$id_stol', '$time')";
 								if ($bacic_connect->query($sql) === TRUE) 
 								{
 									$_SESSION['z_kod'] = @$bacic_connect->insert_id;

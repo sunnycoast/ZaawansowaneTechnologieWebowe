@@ -30,145 +30,6 @@ footer
 	src: url(RemachineScript.ttf);
 }
 
-.boix
-{
-	padding: 2%;
-	width: 	96%;
-	height: 80%;
-	display: -webkit-box;
-	-webkit-box-orient: horizontal;
-}
-
-.pZam
-{    border: 3px solid steelblue;    }
-
-
-.pKat
-{
-	border-top:    3px solid steelblue;
-	border-right:  3px solid steelblue;
-	border-bottom: 3px solid steelblue;
-	height: 538px;
-}
-
-.cBattonNavKat
-{
-	position: relative;
-    background-color: steelblue;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    width: 49.5%;
-    height: 10%;
-    cursor: pointer;
-    border-top-right-radius: 50px;
-    border-top-left-radius:  10px;
-}
-
-.cBattonNavZam
-{
-	position: relative;
-    background-color: gray;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    width: 49.5%;
-    height: 10%;
-    cursor: pointer;
-    border-top-right-radius: 50px;
-    border-top-left-radius:  10px;
-}
-
-.cBattonZak
-{
-	position: relative;
-    background-color: steelblue;
-    color: black;
-    text-align: center;
-    padding-right: 10px;
-    font-size: 16px;
-    width: 16.66%;
-	cursor: pointer;
-    height: 100%;
-	border-top-right-radius: 50px;		
-}
-
-.f1Batton 
-{
-	margin-left: 2%;
-	width: 42%;
-	position: relative;
-    background-color: gray;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 4px 4px #666666;
-}
-
-.f2Batton 
-{
-	top: -50px;
-	margin-left: 46%;
-	width: 42%;
-	position: relative;
-    background-color: red;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 4px 4px #666666;
-}
-
-.f3Batton 
-{
-	margin-top: 7px;
-	margin-left: 2%;
-	width: 42%;
-	position: absolute;
-	left: 0%;
-    background-color: purple;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 4px 4px #666666;
-}
-
-.nav
-{
-	position: relative;
-	overflow: hidden;
-    height: 54px;
-}
-
-.X
-{
-	position:relative;
-	text-align: center;
-	font-size: 16px;
-    border-top-left-radius:  10px;
-	background-color: steelblue;
-	width: 3.30%;
-    height: 100%;
-	cursor: pointer;
-}
-
-.X:hover
-{
-	color: red;
-	font-weight: bold;
-}
-
 .zeg
 {
 	margin-left: 90%;
@@ -189,61 +50,14 @@ footer
 	text-shadow: 5px 5px #AA000088;
 }
 
-.cBattonKat
-{
-	margin:2%; 
-	width:21%; 
-	height:13%; 
-	border-radius: 5px;
-    cursor: pointer;
-    border-style: none;
-    box-shadow: 4px 4px #666666;
-}
-
-
 .cListNa
 {
 	width: 140px;
 }
 
-.cListCn
-{
-	width: 65px;
-}
-
-.cListIl
-{
-	width: 35px;
-}
-
-.cListRz
-{
-	width: 85px;
-}
-
-.cListBt
-{
-	min-width: 75px;
-}
-.smButton
-{
-	width:  25px;
-	height: 25px;
-}
-
 .r
 {
 	text-align: right;
-}
-
-.cListN
-{
-	background-color: #CCCCCC;
-}
-
-.cListP
-{
-	background-color: #EEEEEE;
 }
 
 .c

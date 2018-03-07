@@ -1,3 +1,3 @@
 <?php
-	header("Location: gosc_logowanie.php");
+	header("Location: start.php");
 ?>

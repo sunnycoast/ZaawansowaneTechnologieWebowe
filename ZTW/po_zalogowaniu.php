@@ -18,13 +18,12 @@
 		{
 			$urzytkownik= $_SESSION['urzytkownik'];
 			$imie 		= $_SESSION['imie' ];
-			$z_kod 		= $_SESSION['z_kod'];
 		}
 	?>
 
 	<title><?php echo "$urzytkownik: $imie"?></title>"
 
-	<script type="text/javascript" src="zamowienie.js"></script>
+	<script type="text/javascript" src="js.js"></script>
 	<script>
 		window.onload=zegar;
 	</script>
@@ -105,7 +104,6 @@
 				<?php
 					echo "Urzytkownik: $urzytkownik<br>";
 					echo "Imie: $imie<br>";
-					echo "Nr zamówienia: $z_kod<br>";
 
 				?>
 			</div>

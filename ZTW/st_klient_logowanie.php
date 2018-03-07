@@ -5,14 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="description" content="System pozwalający na zamawianie przez internet.">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gość logowanie</title>
+	<title>Stały klient logowanie</title>
 
 	<?php
 
 		session_start();
-		$imie   = '';
-		$l_os   = '';
-		$k_stol = '';
+		$email  = '';
 		$ogl_err= '';
 
 		if ( isset($_SESSION['zalogowany']) )
@@ -24,9 +22,7 @@
 			}
 			else
 			{
-				$imie   = $_SESSION['imie'   ];
-				$l_os   = $_SESSION['l_os'   ];
-				$k_stol = $_SESSION['k_stol' ];
+				$email  = $_SESSION['email'  ];
 				$ogl_err= $_SESSION['ogl_err'];
 				session_unset();
 			}
@@ -106,17 +102,16 @@
 		<p class="tytul">Projekt Restauracja</p>
 	</header>
 
-	<form class="my_form c" action="gosc_autentykacja.php" method="post">
+	<form class="my_form c" action="st_klient_autentykacja.php" method="post">
 		<span id="err0"><?php echo $ogl_err; ?></span>
-		<div class="nf">Imię:</div>
-		<input class="yI" type="text" name="imie" value="<?=$imie?>" autocomplete="off" required><br/>
 
-		<div class="nf">Liczba osób:</div>
-		<input class="yI" type="number" name="l_os" value="<?=$l_os?>" autocomplete="off" required><br/>
+		<div class="nf">e-mail:</div>
+		<input class="yI" type="email" name="email" value="<?=$email?>" autocomplete="off" required><br/>
 
-		<div class="nf">Kod stolika: </div>
-		<input class="yI" type="text" name="k_stol" value="<?=$k_stol?>" autocomplete="off" required><br/>
-		<input class="yII" type="submit" value="Otwórz rachunek"><br/>
+		<div class="nf">hasło:</div>
+		<input class="yI" type="password" name="haslo" value="" autocomplete="off" required><br/>
+
+		<input class="yII" type="submit" value="Zaloguj"><br/>
 		<input class="yII" type="button" value="Powrót" onclick="window.location.href='start.php';">
 	</form>
 
