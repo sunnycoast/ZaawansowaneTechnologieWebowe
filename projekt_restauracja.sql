@@ -821,9 +821,9 @@ ALTER TABLE `stoliki`
   ADD KEY `ID_Stolika` (`ID_Stolika`);
 
 --
--- Indexes for table `st_klienci`
+-- Indexes for table `stali_klienci`
 --
-ALTER TABLE `st_klienci`
+ALTER TABLE `stali_klienci`
   ADD PRIMARY KEY (`ID_K`),
   ADD UNIQUE KEY `Email` (`Email`);
 
@@ -862,9 +862,9 @@ ALTER TABLE `role`
   MODIFY `ID_R` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `st_klienci`
+-- AUTO_INCREMENT dla tabeli `stali_klienci`
 --
-ALTER TABLE `st_klienci`
+ALTER TABLE `stali_klienci`
   MODIFY `ID_K` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
